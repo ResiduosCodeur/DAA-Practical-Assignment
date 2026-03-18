@@ -54,7 +54,7 @@ Example:
 5
 8 4 7 2 4
 ```
-In our analysis, we have taken ```n = 5```
+In our analysis, we have taken ```n = 7```
 
 <strong>Running the File:</strong>
 

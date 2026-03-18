@@ -12,7 +12,7 @@ int main()
 
     srand(time(0));
 
-    vector<int> sizes = {100, 500, 1000, 5000, 10000};
+    vector<int> sizes = {100, 500, 1000, 5000, 7500 ,10000, 20000};
 
     ofstream randomFile("Test Cases/random.txt");
     ofstream incFile("Test Cases/increasing.txt");

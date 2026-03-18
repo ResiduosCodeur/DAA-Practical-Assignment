@@ -183,7 +183,7 @@ long long measure(function<void()> func)
     for(int i = 0; i < repeat; i++)
         func();
     auto end = high_resolution_clock::now();
-    return duration_cast<nanoseconds>(end - start).count() / repeat;
+    return duration_cast<microseconds>(end - start).count() / repeat;
 }
 
 // ---------------- MAIN ----------------
@@ -224,27 +224,27 @@ int main()
         b = a;
         cout << "Insertion: " << measure([&]()
                                          { insertionSort(b); })
-             << " ns\n";
+            << " ns\n";
 
         b = a;
         cout << "Merge: " << measure([&]()
                                      { mergeSort(b, 0, n - 1); })
-             << " ns\n";
+            << " ns\n";
 
         b = a;
         cout << "Quick (first): " << measure([&]()
                                              { quickSort1(b, 0, n - 1); })
-             << " ns\n";
+            << " ns\n";
 
         b = a;
         cout << "Quick (random): " << measure([&]()
                                               { quickSort2(b, 0, n - 1); })
-             << " ns\n";
+            << " ns\n";
 
         b = a;
         cout << "Quick (median): " << measure([&]()
                                               { quickSort3(b, 0, n - 1); })
-             << " ns\n";
+            << " ns\n";
 
         b = a;
         cout << "Heap: " << measure([&]()
@@ -254,7 +254,7 @@ int main()
         b = a;
         cout << "Radix: " << measure([&]()
                                      { radixSort(b); })
-             << " ns\n";
+            << " ns\n";
         cout << endl;
     }
 }

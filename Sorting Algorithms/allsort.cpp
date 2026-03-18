@@ -183,7 +183,7 @@ long long measure(function<void()> func)
     for(int i = 0; i < repeat; i++)
         func();
     auto end = high_resolution_clock::now();
-    return duration_cast<microseconds>(end - start).count() / repeat;
+    return duration_cast<nanoseconds>(end - start).count() / repeat;
 }
 
 // ---------------- MAIN ----------------
@@ -191,7 +191,26 @@ long long measure(function<void()> func)
 int main()
 {
     srand(time(0));
-    ifstream file("../Test Cases/increasing.txt");
+    string s;
+    int i;
+    cout<<"Enter the type of input you live to give.Type the row number\n1.Random\n2.Increasing\n3.Decreasing\n";
+    cin>>i;
+    if (i==1)
+    {
+        s="random";
+    }else if (i==2)
+    {
+        s="increasing";
+    }else if (i==3)
+    {
+        s="decreasing";
+    }else
+    {
+        cout<<"Invalid choice of type."<<endl;
+        return 0;
+    }
+    string path = "../Test Cases/" + s + ".txt";
+    ifstream file(path);
 
     if (!file)
     {
@@ -214,47 +233,47 @@ int main()
         cout << "n=" << n << endl;
         cout << "Selection: " << measure([&]()
                                          { selectionSort(b); })
-             << " ns\n";
+             << " us\n";
 
         b = a;
         cout << "Bubble: " << measure([&]()
                                       { bubbleSort(b); })
-             << " ns\n";
+             << " us\n";
 
         b = a;
         cout << "Insertion: " << measure([&]()
                                          { insertionSort(b); })
-            << " ns\n";
+            << " us\n";
 
         b = a;
         cout << "Merge: " << measure([&]()
                                      { mergeSort(b, 0, n - 1); })
-            << " ns\n";
+            << " us\n";
 
         b = a;
         cout << "Quick (first): " << measure([&]()
                                              { quickSort1(b, 0, n - 1); })
-            << " ns\n";
+            << " us\n";
 
         b = a;
         cout << "Quick (random): " << measure([&]()
                                               { quickSort2(b, 0, n - 1); })
-            << " ns\n";
+            << " us\n";
 
         b = a;
         cout << "Quick (median): " << measure([&]()
                                               { quickSort3(b, 0, n - 1); })
-            << " ns\n";
+            << " us\n";
 
         b = a;
         cout << "Heap: " << measure([&]()
                                     { heapSort(b); })
-             << " ns\n";
+             << " us\n";
 
         b = a;
         cout << "Radix: " << measure([&]()
                                      { radixSort(b); })
-            << " ns\n";
+            << " us\n";
         cout << endl;
     }
 }

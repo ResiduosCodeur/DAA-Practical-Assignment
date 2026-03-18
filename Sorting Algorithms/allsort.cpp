@@ -183,7 +183,7 @@ long long measure(function<void()> func)
     for(int i = 0; i < repeat; i++)
         func();
     auto end = high_resolution_clock::now();
-    return duration_cast<nanoseconds>(end - start).count() / repeat;
+    return duration_cast<microseconds>(end - start).count() / repeat;
 }
 
 // ---------------- MAIN ----------------

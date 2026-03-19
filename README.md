@@ -32,7 +32,7 @@ Use the file testCaseGenerator.cpp to generate the three types of test cases -
 The format of the input files is:
 <br>
 Total number of test cases in the file<br>
-The next 2n lines contains the size of array k and the numbers<br>
+The next 2n lines contains the size of each array k and the numbers<br>
 
 ```
 n
@@ -54,7 +54,7 @@ Example:
 5
 8 4 7 2 4
 ```
-In our analysis, we have taken ```n = 7```
+In our analysis, we have taken ```t = 7```
 
 <strong>Running the File:</strong>
 

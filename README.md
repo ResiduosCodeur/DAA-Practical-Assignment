@@ -71,11 +71,24 @@ This will generate three files:<br>
 
 
 <h2> Instructions to run allsortcount.cpp </h2>
-This is the file which contains all the sorting algorithms and is used to see all the running time and number of comparsion associated with the sorting algorithms.<br>
+This is the file which contains all the sorting algorithms and is used to see all the running time and number of comparsion associated with the sorting algorithms.<br><br>
 <strong>Running the File:</strong>
 
 ```
 g++ allsortcount.cpp -o a
 ./a
 ```
-<br>Program input<br>
+<strong>Program input<strong>
+<br>
+When you run the program,select the input type:
+<br>
+```
+1. Random
+2. Increasing
+3. Decreasing
+```
+<br>
+Based on your choice, the program reads:
+```
+../Test Cases/<type>.txt
+```

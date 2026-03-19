@@ -71,7 +71,7 @@ This will generate three files:<br>
 
 
 <h2> Instructions to run allsortcount.cpp </h2>
-This is the file which contains all the sorting algorithms and is used to see all the running time and number of comparsion associated with the sorting algorithms.
+This is the file which contains all the sorting algorithms and is used to see all the running time and number of comparsion associated with the sorting algorithms.<br>
 <strong>Running the File:</strong>
 
 ```

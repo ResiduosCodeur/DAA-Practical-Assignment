@@ -112,3 +112,40 @@ Quick(median): XX us, Comparisons: XXXX
 Heap: XX us, Comparisons: XXXX
 Radix: XX us (no comparisons)
 ```
+<br>
+<br>
+<h2> Instructions to run allquicksort.cpp </h2>
+This is the file which contains all the quick sorting algorithms and is used to see all the running time associated with all three versions of quicksort based on pivot selection(first element pivot, random pivot and Median between first element, last element and middle element).<br><br>
+<strong>Running the File:</strong>
+
+```
+g++ allquicksort.cpp -o a
+./a
+```
+<strong>Program input</strong>
+<br>
+When you run the program,select the input type:
+<br>
+```
+1. Random
+2. Increasing
+3. Decreasing
+```
+<br>
+Based on your choice, the program reads:
+<br>
+
+```
+../Test Cases/<type>.txt
+```
+
+<strong>Output format</strong>
+<br>
+for each test case:
+<br>
+```
+n = 100
+Quick(first): XX us
+Quick(random): XX us
+Quick(median): XX us
+```

@@ -78,7 +78,7 @@ This is the file which contains all the sorting algorithms and is used to see al
 g++ allsortcount.cpp -o a
 ./a
 ```
-<strong>Program input<strong>
+<strong>Program input</strong>
 <br>
 When you run the program,select the input type:
 <br>
@@ -89,6 +89,25 @@ When you run the program,select the input type:
 ```
 <br>
 Based on your choice, the program reads:
+<br>
 ```
 ../Test Cases/<type>.txt
+```
+
+<strong>Output format</strong>
+<br>
+for each test case:
+<br>
+```
+n = 100
+
+Selection: 110 us, Comparisons: 4950
+Bubble: 99 us, Comparisons: XXXX
+Insertion: XX us, Comparisons: XXXX
+Merge: XX us, Comparisons: XXXX
+Quick(first): XX us, Comparisons: XXXX
+Quick(random): XX us, Comparisons: XXXX
+Quick(median): XX us, Comparisons: XXXX
+Heap: XX us, Comparisons: XXXX
+Radix: XX us (no comparisons)
 ```

@@ -100,10 +100,10 @@ Based on your choice, the program reads:
 for each test case:
 <br>
 ```
-n = 100
+n = XX
 
-Selection: 110 us, Comparisons: 4950
-Bubble: 99 us, Comparisons: XXXX
+Selection: XXX us, Comparisons: XXX
+Bubble: XXX us, Comparisons: XXXX
 Insertion: XX us, Comparisons: XXXX
 Merge: XX us, Comparisons: XXXX
 Quick(first): XX us, Comparisons: XXXX
@@ -144,7 +144,7 @@ Based on your choice, the program reads:
 for each test case:
 <br>
 ```
-n = 100
+n = XX
 Quick(first): XX us
 Quick(random): XX us
 Quick(median): XX us

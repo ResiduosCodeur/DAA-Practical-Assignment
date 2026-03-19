@@ -68,3 +68,14 @@ This will generate three files:<br>
 1. random.txt
 2. increasing.txt
 3. decreasing.txt
+
+
+<h2> Instructions to run allsortcount.cpp </h2>
+This is the file which contains all the sorting algorithms and is used to see all the running time and number of comparsion associated with the sorting algorithms.
+<strong>Running the File:</strong>
+
+```
+g++ allsortcount.cpp -o a
+./a
+```
+<br>Program input<br>

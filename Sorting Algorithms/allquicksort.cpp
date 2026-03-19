@@ -66,6 +66,8 @@ int medianOfThree(vector<int>& arr, int low, int high) {
     swap(arr[low], arr[j]);
     return j;
 }
+
+
 void quickSort3(vector<int>& arr, int low, int high) {
     if (low < high) {
         int pi = medianOfThree(arr, low, high);
